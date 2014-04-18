@@ -1,0 +1,43 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 18, 2014, 3:10:08 PM
+    Author     : DorG
+*/
+
+body
+ {
+ 
+ }
+ 
+ .HeaderFooter{
+    background-color:#19a3ff;
+    border-color: #od598c;    
+ }
+ 
+ h1{
+        color: #ffffff; 
+        box-shadow: #444444;
+    }
+ 
+ p
+ {
+ font-family:"Times New Roman";
+ font-size:20px;
+ }
+ 
+ .textBoxi{
+     width: 300px;
+     border: 2px solid;
+     
+     border-color: #fff;
+     border-radius: 25px;
+     background-color: #fff;
+     
+ }
+ 
+ 
+ 

@@ -1,0 +1,127 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+
+  <title>Trustees</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="CSS/themes/test1.min.css" />
+  <link rel="stylesheet" href="CSS/themes/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" /> 
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script> 
+  <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script> 
+
+  
+</head> 
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>Trustee's Login</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" id="content">
+            <div data-role="main" id="login">
+                
+                <!-- new user button -->
+                <div align="right"> 
+                    <a href="#newUser" id="newUserLink" class="ui-btn ui-btn-inline ui-mini">New User</a>
+                </div>
+                <!-- /new user button -->
+                
+                <div class="widthChange"> 
+                <form name="loginForm" id="loginForm" method="get" action="#index">                    	
+                    
+                    <label for="uName">User Name:</label>
+                    <div class="textBoxi">                    
+                        <input type="text" style="border: #ffffff" name="userName" id="uName" data-clear-btn="true">
+                    </div>
+                     <label for="Pword">Password:</label>
+                     <input type="text" name="password" id="Pword" data-clear-btn="true">
+                     
+                     <div class="loginSub">
+                     <input id ="loginSub" type="submit" value="Submit">
+                     </div>
+                     
+                </form>
+            </div>        
+            </div>
+		
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h5>All rights reserved....</h5>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+
+
+
+<div id="newUser">
+          <div data-role="header">
+		<h1>New User</h1>
+	</div>
+    <!-- /header -->
+
+	<div data-role="content">	
+		<p>Please fill the following details:</p>
+                
+                <div class="signIn">  
+                   
+                    <form name="newUserForm" id="newUserForm" method="get" action="#index">                    	
+                        
+                        <div data-role="fieldcontain">
+                            <label for="UName">User Name:</label>                    
+                            <input type="text" style="border: #ffffff" name="userName" id="UName" data-clear-btn="true" value="">                   
+                        </div>    
+                        
+                        <div data-role="fieldcontain">                            
+                            <label for="LName">Last Name:</label>                    
+                            <input type="text" style="border: #ffffff" name="LName" id="LName" data-clear-btn="true" value="">                    
+                        </div>
+                        
+                        <div data-role="fieldcontain">                            
+                            <label for="PhoneNum">Phone Number:</label>                    
+                            <input type="text" style="border: #ffffff" name="Pnum" id="PhoneNum" data-clear-btn="true" value="">                    
+                        </div>
+                        
+                        <div data-role="fieldcontain">                            
+                            <label for="SGEmail">Email:</label>                    
+                            <input type="text" style="border: #ffffff" name="Email" id="SGEmail" data-clear-btn="true" value="">
+                            <!--- check validity button--->
+                            <div data-role="fieldcontain">
+                           <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-search ui-btn-icon-notext">Search</a>
+                            </div>
+                           <!--- check validity--->
+                        </div>
+                        
+                        <p>Please insert your's trustee's Email's:</p>
+                        
+                    </form>
+                </div>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+        </div>
+
+<!-----------------------------------INDEX----------------->
+<div id="index">
+    <div data-role="header">
+		<h1>Main</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>Page content goes here.</p>		
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div>
+<!-----------------------------------/INDEX----------------->
+
+</body>
+</html>
