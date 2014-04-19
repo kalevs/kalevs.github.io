@@ -78,22 +78,25 @@
 
 <!------------------------------NEW User-------------------------->
 
- <section id="newUser" data-role="page" data-theme="a">
+ <section id="newUser" data-role="page">
 <div>
           <div data-role="header">
               <div class="HeaderFooter">
 		<h1>New User</h1>
               </div>
-                <a href="#login" data-role="button" data-theme="a">Back</a>
+                <a href="#login" data-role="button" data-theme="c">Back</a>
 	</div>
     <!-- /header -->
 
 	<div data-role="content">	
  <form name="newUserForm" id="newUserForm" method="get" action="#index">                    	
-                <table> 
+                <table id="NUTable">
+                    <tbody>
                     <tr>
-                        <td>
+                        <td>    
+                            <div class="HeaderFooter">
                             <p>Please fill the following details:</p> 
+                            </div>
                         </td>
                     </tr>
                                        
@@ -219,6 +222,7 @@
                                 </td>
                             </tr>
                         </div>
+                    </tbody>
                 </table>        
                     </form>
                 
