@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Trustees</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="CSS/jquery.mobile-1.4.2/jquery.mobile.structure-1.4.2.min.css" />
+  <link rel="stylesheet" href="CSS/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" />
+  <link rel="stylesheet" href="CSS/themes/test1.min.css" />
+  <link rel="stylesheet" href="CSS/themes/jquery.mobile.icons.min.css" />
+  
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="CSS/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js"></script>
+
+  <!------------------- LoginForm input check------>
+    <script>
+            function validateUserAndPass()
+            {
+                var name = document.forms["loginForm"]["userName"].value;
+                var pass = document.forms["loginForm"]["Pword"].value;
+                if ((name != "") || (pass != ""))
+                {
+                    return false;
+                }
+            }
+        </script>
+  
+        
+        
+  
+</head>
+<body>
+     <section id="login" data-role="page" data-theme="a">
+<div>
+
+<div data-role="header">
+            <div class="widthChange">
+<h1>Trustee's Login</h1>
+            </div>
+</div><!-- /header -->
+
+<div data-role="content" id="content">
+            <div data-role="main">
+                
+                <!-- new user button -->
+                <div align="right">
+                    <a href="#newUser" id="newUserLink" class="ui-btn ui-btn-inline ui-mini">New User</a>
+                </div>
+                <!-- /new user button -->
+                
+                <div class="widthChange">
+                <form id="loginForm">
+                    
+                    <label for="uName">User Name:</label>
+                    <div class="textBoxi">
+                        <input type="text" style="border: #ffffff" name="userName" id="userName" data-clear-btn="true">
+                    </div>
+                     <label for="Pword">Password:</label>
+                     <input type="text" name="password" id="Pword" data-clear-btn="true">
+                     
+                     <div class="loginSub">
+                         <input id ="loginSub" type="submit" value="Submit" onclick='validateUserAndPass();'>
+                     </div>
+                     
+                </form>
+            </div>
+            </div>
+
+</div><!-- /content -->
+
+<div data-role="footer">
+            <div class="widthChange">
+<h5>All rights reserved....</h5>
+            </div>
+</div><!-- /footer -->
+</div><!-- /page -->
+
+    </section>
+
+    <!------------------------------NEW User-------------------------->
+    <section id="newUser" data-role="page" data-theme="a">
+<div>
+          <div data-role="header">
+<h1>New User</h1>
+                  <a href="#login" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Back</a>
+</div>
+    <!-- /header -->
+
+<div data-role="content">	
+<p>Please fill the following details:</p>
+                   
+                    <form name="newUserForm" id="newUserForm" method="get" action="#index">
+                        
+                        <div data-role="fieldcontain">
+                            <label for="UName">User Name:</label>
+                            <input type="text" style="border: #ffffff" name="userName" id="UName" data-clear-btn="true" value="">
+                        </div>
+                        
+                        <div data-role="fieldcontain">
+                            <label for="LName">Last Name:</label>
+                            <input type="text" style="border: #ffffff" name="LName" id="LName" data-clear-btn="true" value="">
+                        </div>
+                        
+                        <div data-role="fieldcontain">
+                            <label for="PhoneNum">Phone Number:</label>
+                            <input type="text" style="border: #ffffff" name="Pnum" id="PhoneNum" data-clear-btn="true" value="">
+                        </div>
+                        
+                        <div data-role="fieldcontain">
+                            <label for="SGEmail">Email:</label>
+                            <input type="text" style="border: #ffffff;width:90%;display:inline-block" name="Email" id="SGEmail" data-clear-btn="true" value="">
+                           
+                            <!--- check validity button--->
+                            <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Check Email</a>
+
+                            <div data-role="popup" id="myPopup">
+                                <p>A function will check if the address is available</p>
+                            </div>
+                            <!--- check validity--->
+                        </div>
+                           
+                        
+                        <p>Please insert your's trustee's Email's:</p>
+                        
+                        <div data-role="fieldcontain">
+                            <label for="SGT1">1:</label>
+                            <input type="text" style="border: #ffffff" name="T1" id="SGT1" data-clear-btn="true" value="">
+                        </div>
+                        
+                        <div data-role="fieldcontain">
+                            <label for="SGT2">2:</label>
+                            <input type="text" style="border: #ffffff" name="T2" id="SGT2" data-clear-btn="true" value="">
+                        </div>
+                        
+                        <div data-role="fieldcontain">
+                            <label for="SGT3">3:</label>
+                            <input type="text" style="border: #ffffff" name="T3" id="SGT3" data-clear-btn="true" value="">
+                        </div>
+                        
+                        <div data-role="fieldcontain">
+                            <label for="SGT4">4:</label>
+                            <input type="text" style="border: #ffffff" name="T4" id="SGT4" data-clear-btn="true" value="">
+                        </div>
+                        
+                        <div data-role="fieldcontain">
+                            <label for="SGT5">5:</label>
+                            <input type="text" style="border: #ffffff" name="T5" id="SGT5" data-clear-btn="true" value="">
+                        </div>
+                        
+                         <div class="loginSub">
+                     <input id ="GSSubmit" type="submit" value="Submit">
+                     </div>
+                        
+                    </form>
+                
+</div><!-- /content -->
+
+<div data-role="footer">
+<h4>Page Footer</h4>
+</div>
+</div> <!--page-->
+    </section>
+    
+<!--/NEW User-->
+    
+<!--Main-->
+<section id="Main" data-role="page" data-theme="a">
+<div>
+    <div data-role="header">
+        <h1>Main</h1>
+    </div><!-- /header -->
+
+<div data-role="content">	
+                        
+            <div id="logOut" align="right">
+                <a href="#" class="ui-btn ui-icon-edit ui-corner-all ui-btn-icon-left logOut">Log-Out</a>
+            </div>
+            
+            <div data-role="main" class="ui-content">
+                <a href="#NewMessage" class="ui-btn ui-icon-plus ui-btn-icon-left">New Message</a>
+            </div>
+            <div data-role="main" class="ui-content">
+                    <a href="#MailBox" class="ui-btn ui-icon-mail ui-btn-icon-left">MailBox</a>
+            </div>	
+            <div data-role="main" class="ui-content">
+                <a href="#Settings" class="ui-btn ui-icon-grid ui-btn-icon-left">Settings</a>
+            </div>
+            
+        
+        </div><!-- /content -->
+
+<div data-role="footer">
+<h4></h4>
+</div><!-- /footer -->
+</div>
+</section>
+<!--/Main-->
+
+<!--Settings-->
+<section id="Settings" data-role="page" data-theme="a">
+    <div>
+<div data-role="header">
+<h1>Settings</h1>
+</div><!-- /header -->
+
+<div data-role="content">	
+<p>Page content goes here.</p>	
+</div><!-- /content -->
+
+<div data-role="footer">
+<h4>Settings</h4>
+</div><!-- /footer -->
+    </div>
+</section>
+<!--/Settings-->
+
+<!--MailBox-->
+<section id="MailBox" data-role="page" data-theme="a">
+    <div>
+
+<div data-role="header">
+<h1>MailBox</h1>
+</div><!-- /header -->
+
+<div data-role="content">	
+<p>Page content goes here.</p>	
+</div><!-- /content -->
+
+<div data-role="footer">
+<h4>MailBox</h4>
+</div><!-- /footer -->
+    </div>
+</section>
+<!--/MailBox-->
+
+<!--NewMessage-->
+<section id="NewMessage" data-role="page" data-theme="a">
+    <div>
+
+<div data-role="header">
+<h1>New Message</h1>
+</div><!-- /header -->
+
+<div data-role="content">	
+<p>Page content goes here.</p>	
+</div><!-- /content -->
+
+<div data-role="footer">
+<h4>New Message</h4>
+</div><!-- /footer -->
+    </div>
+</section>
+<!--/NewMessage-->
+
+
+</body>
+</html>
+
