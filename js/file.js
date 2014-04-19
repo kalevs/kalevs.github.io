@@ -18,6 +18,8 @@ function validateUserAndPass()
                 {
                 alert("Not a valid e-mail address");
                   return false;
+                } else{
+                            return true;
                 }
             }
 
@@ -47,5 +49,7 @@ function validateUserAndPassNewUserPage(){
                 {
                 alert("Not a valid e-mail address");
                   return false;
+                } else{
+                            return true;
                 }
             }
