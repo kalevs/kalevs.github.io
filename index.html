@@ -11,18 +11,33 @@
   <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script> 
   <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script> 
 
+  <!------------------- LoginForm input check------>
+    <script>
+            function validateUserAndPass()
+            {
+                var name = document.forms["loginForm"]["userName"].value;
+                var pass = document.forms["loginForm"]["Pword"].value;
+                if ((name != "") || (pass != ""))
+                {
+                    return false;
+                }
+            }
+        </script>
+  
+        
+        
   
 </head> 
 <body> 
-
-<div data-role="page">
+    <section id="login" data-role="page" data-theme="a">
+<div>
 
 	<div data-role="header">
 		<h1>Trustee's Login</h1>
 	</div><!-- /header -->
 
 	<div data-role="content" id="content">
-            <div data-role="main" id="login">
+            <div data-role="main">
                 
                 <!-- new user button -->
                 <div align="right"> 
@@ -31,7 +46,7 @@
                 <!-- /new user button -->
                 
                 <div class="widthChange"> 
-                <form name="loginForm" id="loginForm" method="get" action="#index">                    	
+                <form name="loginForm" id="loginForm" method="get" action="#index" onsubmit="return validateUserAndPass()">                    	
                     
                     <label for="uName">User Name:</label>
                     <div class="textBoxi">                    
@@ -55,19 +70,18 @@
 	</div><!-- /footer -->
 </div><!-- /page -->
 
+    </section>
 
-
-
-<div id="newUser">
+    <section id="newUser" data-role="page" data-theme="a">
+<div>
           <div data-role="header">
 		<h1>New User</h1>
+                <a href="#login" data-role="button" data-theme="a">Back</a>
 	</div>
     <!-- /header -->
 
 	<div data-role="content">	
-		<p>Please fill the following details:</p>
-                
-                <div class="signIn">  
+		<p>Please fill the following details:</p> 
                    
                     <form name="newUserForm" id="newUserForm" method="get" action="#index">                    	
                         
@@ -88,27 +102,58 @@
                         
                         <div data-role="fieldcontain">                            
                             <label for="SGEmail">Email:</label>                    
-                            <input type="text" style="border: #ffffff" name="Email" id="SGEmail" data-clear-btn="true" value="">
+                            <input type="text" style="border: #ffffff;width:90%;display:inline-block" name="Email" id="SGEmail" data-clear-btn="true" value="">
+                           
                             <!--- check validity button--->
-                            <div data-role="fieldcontain">
-                           <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-search ui-btn-icon-notext">Search</a>
-                            </div>
-                           <!--- check validity--->
+                           
+                            <!--- check validity--->                                                    
                         </div>
+                           
                         
                         <p>Please insert your's trustee's Email's:</p>
                         
+                        <div data-role="fieldcontain">                            
+                            <label for="SGT1">1:</label>                    
+                            <input type="text" style="border: #ffffff" name="T1" id="SGT1" data-clear-btn="true" value="">                    
+                        </div>
+                        
+                        <div data-role="fieldcontain">                            
+                            <label for="SGT2">2:</label>                    
+                            <input type="text" style="border: #ffffff" name="T2" id="SGT2" data-clear-btn="true" value="">                    
+                        </div>
+                        
+                        <div data-role="fieldcontain">                            
+                            <label for="SGT3">3:</label>                    
+                            <input type="text" style="border: #ffffff" name="T3" id="SGT3" data-clear-btn="true" value="">                    
+                        </div>
+                        
+                        <div data-role="fieldcontain">                            
+                            <label for="SGT4">4:</label>                    
+                            <input type="text" style="border: #ffffff" name="T4" id="SGT4" data-clear-btn="true" value="">                    
+                        </div>
+                        
+                        <div data-role="fieldcontain">                            
+                            <label for="SGT5">5:</label>                    
+                            <input type="text" style="border: #ffffff" name="T5" id="SGT5" data-clear-btn="true" value="">                    
+                        </div>
+                        
+                         <div class="loginSub">
+                     <input id ="GSSubmit" type="submit" value="Submit">
+                     </div>
+                        
                     </form>
-                </div>
+                
 	</div><!-- /content -->
 
 	<div data-role="footer">
 		<h4>Page Footer</h4>
 	</div>
-        </div>
-
+</div> <!-----------page----->
+    </section>
+    
 <!-----------------------------------INDEX----------------->
-<div id="index">
+<section id="index" data-role="page" data-theme="a">
+<div>
     <div data-role="header">
 		<h1>Main</h1>
 	</div><!-- /header -->
@@ -121,6 +166,7 @@
 		<h4>Page Footer</h4>
 	</div><!-- /footer -->
 </div>
+</section>
 <!-----------------------------------/INDEX----------------->
 
 </body>
