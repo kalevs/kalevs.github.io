@@ -13,11 +13,19 @@
   
   <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script> 
   <script src="CSS/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js"></script>
-  
-  <script src="js/file.js"></script>
 
   <!------------------- LoginForm input check------>
- 
+    <script>
+            function validateUserAndPass()
+            {
+                var name = document.forms["loginForm"]["userName"].value;
+                var pass = document.forms["loginForm"]["Pword"].value;
+                if ((name != "") || (pass != ""))
+                {
+                    return false;
+                }
+            }
+        </script>
   
         
         
@@ -53,7 +61,7 @@
                      <input type="text" name="password" id="Pword" data-clear-btn="true">
                      
                      <div class="loginSub">
-                         <input id ="loginSub" type="submit" value="Submit" onclick="return validateUserAndPass()">
+                         <input id ="loginSub" type="submit" value="Submit" onclick='validateUserAndPass();'>
                      </div>
                      
                 </form>
@@ -83,7 +91,7 @@
 	<div data-role="content">	
 		<p>Please fill the following details:</p> 
                    
-                <form name="newUserForm" id="newUserForm" method="get" action="#index" onsubmit=" return validateUserAndPassNewUserPage()">                    	
+                    <form name="newUserForm" id="newUserForm" method="get" action="#index">                    	
                         
                         <div data-role="fieldcontain">
                             <label for="UName">User Name:</label>                    
