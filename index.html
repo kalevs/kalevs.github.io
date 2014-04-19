@@ -78,167 +78,6 @@
 
 <!------------------------------NEW User-------------------------->
 
- <section id="newUser" data-role="page">
-<div>
-          <div data-role="header">
-              <div class="HeaderFooter">
-		<h1>New User</h1>
-              </div>
-                <a href="#login" data-role="button" data-theme="c">Back</a>
-	</div>
-    <!-- /header -->
-
-	<div data-role="content">	
- <form name="newUserForm" id="newUserForm" method="get" action="#index">                    	
-                <table id="NUTable">
-                    <tbody>
-                    <tr>
-                        <td>    
-                            <div class="HeaderFooter">
-                            <p>Please fill the following details:</p> 
-                            </div>
-                        </td>
-                    </tr>
-                                       
-                    <tr>
-                        <div data-role="fieldcontain">
-                            <td>
-                            <label for="UName">User Name:</label>                    
-                            </td>
-                            <td>
-                            <input type="text" style="border: #ffffff" name="userName" id="UName" data-clear-btn="true" value="">                   
-                            </td>
-                        </div>    
-                    </tr>
-                    
-                    <tr>
-                        <div data-role="fieldcontain">                            
-                            <td>
-                            <label for="LName">Last Name:</label>                    
-                            </td>
-                            <td>
-                            <input type="text" style="border: #ffffff" name="LName" id="LName" data-clear-btn="true" value="">                    
-                            </td>
-                        </div>
-                    </tr> 
-                    
-                    <tr>
-                        <div data-role="fieldcontain">                            
-                            <td>                              
-                            <label for="PhoneNum">Phone Number:</label>                    
-                            </td>
-                            <td>
-                            <input type="text" style="border: #ffffff" name="Pnum" id="PhoneNum" data-clear-btn="true" value="">                   
-                            </td>
-                        </div>                      
-                    </tr>
-                        <div data-role="fieldcontain">                            
-                            <tr>
-                                <td>
-                            <label for="SGEmail">Email:</label>                    
-                            </td>
-                            <td>
-                            <input type="text" style="border: #ffffff;width:90%;display:inline-block" name="Email" id="SGEmail" data-clear-btn="true" value="">
-                           </td>
-                           <td>
-                            <!--- check validity button--->
-                           <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Check Email</a>
-
-                            <div data-role="popup" id="myPopup">
-                                <p>A function will check if the address is available</p>
-                            </div>
-                            <!--- check validity--->                                                    
-                            </td>
-                            
-                            </tr>
-                        </div>
-                           
-                    <tr>
-                        <td>
-                        <p>Please insert your's trustee's Email's:</p>
-                        </td>
-                    </tr>
-                    
-                    
-                        <div data-role="fieldcontain">                            
-                            <tr>
-                                <td>
-                            <label for="SGT1">1:</label>                    
-                            </td>
-                            <td>
-                            <input type="text" style="border: #ffffff" name="T1" id="SGT1" data-clear-btn="true" value="">                    
-                            </td>
-                             </tr>
-                        </div>
-                        
-                        <div data-role="fieldcontain">    
-                            <tr>
-                                <td>
-                                <label for="SGT2">2:</label>                    
-                                </td>
-                                <td>
-                                <input type="text" style="border: #ffffff" name="T2" id="SGT2" data-clear-btn="true" value="">                    
-                                </td>
-                            </tr>
-                        </div>
-                        
-                        <div data-role="fieldcontain">                            
-                            <tr>
-                                <td>
-                                    <label for="SGT3">3:</label>                    
-                                </td>
-                                <td>
-                                    <input type="text" style="border: #ffffff" name="T3" id="SGT3" data-clear-btn="true" value="">                    
-                                </td>
-                            </tr>
-                        </div>
-                        
-                        <div data-role="fieldcontain">                            
-                            <tr>
-                                <td>
-                                    <label for="SGT4">4:</label>                    
-                                </td>
-                                <td>
-                                    <input type="text" style="border: #ffffff" name="T4" id="SGT4" data-clear-btn="true" value="">                    
-                                </td>
-                            </tr>
-                        </div>
-                        
-                        <div data-role="fieldcontain">                            
-                            <tr>
-                                <td>
-                                    <label for="SGT5">5:</label>                    
-                                </td>
-                                <td>
-                                    <input type="text" style="border: #ffffff" name="T5" id="SGT5" data-clear-btn="true" value="">                    
-                                </td>
-                            </tr>
-                        </div>
-                        
-                        <div class="loginSub">
-                            <tr>
-                                <td>
-                                <input id ="GSSubmit" type="submit" value="Submit">
-                                </td>
-                            </tr>
-                        </div>
-                    </tbody>
-                </table>        
-                    </form>
-                
-	</div><!-- /content -->
-
-	<div data-role="footer">
-            <div class="HeaderFooter">                
-		<h4>Page Footer</h4>
-            </div>
-	</div>
-</div> <!-----------page----->
-    </section>
-    
-<!------------------------------/NEW User-------------------------->
-
-<!----
 
     <section id="newUser" data-role="page" data-theme="a">
 <div>
@@ -249,7 +88,7 @@
 	
 	
 	
-    <!-- /header --
+    <!-- /header -->
 
 	<div data-role="content">	
 		<p>Please fill the following details:</p> 
@@ -274,10 +113,14 @@
                         <div data-role="fieldcontain">                            
                             <label for="SGEmail">Email:</label>                    
                             <input type="text" style="border: #ffffff;width:90%;display:inline-block" name="Email" id="SGEmail" data-clear-btn="true" value="">
-                           \\-->
-                            <!--- check validity button---
                            
-                            <!--- check validity---
+                            <!--- check validity button--->
+                           <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Check Email</a>
+
+                            <div data-role="popup" id="myPopup">
+                                <p>A function will check if the address is available</p>
+                            </div>
+                            <!--- check validity--->
                         </div>
                            
                         
@@ -314,17 +157,17 @@
                         
                     </form>
                 
-	</div><!-- /content --
+	</div>
+	<!-- /content -->
 
 	<div data-role="footer">
 		<h4>Page Footer</h4>
 	</div>
 </div> 
-<!-----------page-----
-    <!--
-    	
+<!-----------page----->
+    
     </section>
-    -->
+    
 <!-----------------------------------INDEX----------------->
 <section id="index" data-role="page" data-theme="a">
 <div>
