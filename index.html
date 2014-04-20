@@ -16,11 +16,7 @@
   
   <script src="js/file.js"></script>
 
-  <!------------------- LoginForm input check------>
-  
-  
-        
-        
+  <!------------------- LoginForm input check------>       
   
 </head> 
 <body>
@@ -248,7 +244,11 @@
     <div>
 
 	<div data-role="header">
-		<h1>MailBox</h1>
+            <a href="#Main" data-role="button" data-icon="arrow-l" data-iconpos="notext">Back</a>
+            <h1>New Message</h1>
+            <a href="#Main" data-role="button" data-icon="home" data-iconpos="notext">Home</a>             
+            </div><!-- /header -->
+            <h1>MailBox</h1>
 	</div><!-- /header -->
 
 	<div data-role="content">	
@@ -274,31 +274,17 @@
     </div><!-- /header -->
     
     <form id="SendMessageForm" onsubmit="return  validateUserMessage();" method="post">
-     <fieldset  data-role="collapsible" data-mini="true">
-        <legend>Send to:</legend>
-        <div data-role="controlgroup">
-            <input name="checkbox-1-a" id="checkbox-1-a" type="checkbox">
-            <label for="checkbox-1-a">One</label>
-            <input name="checkbox-2-a" id="checkbox-2-a" type="checkbox">
-            <label for="checkbox-2-a">Two</label>
-            <input name="checkbox-3-a" id="checkbox-3-a" type="checkbox">
-            <label for="checkbox-3-a">Three</label>
-        </div>
-    </fieldset>
-   
-
-    
-    <fieldset data-role="controlgroup" data-type="horizontal" >
-        <legend>Send to:</legend>
-    <label for="select-custom-14">Select A</label>
-    <select name="select-custom-14" id="select-custom-14" multiple="multiple" data-native-menu="false">
+     
+    <div class="ui-field-contain">
+      <label for="select-custom-19">Send TO:</label>
+    <select name="select-custom-19" id="select-custom-19" multiple="multiple" data-native-menu="false">
         <option value="#">Ron</option>
         <option value="#">Shay</option>
         <option value="#">Dor</option>
         <option value="#">Oren</option>
         <option value="#">Idan</option>
     </select>
-</fieldset>
+    </div>
 	<div data-role="content">	
 		
                     <label for="text-1">Please enter your message here:</label>
@@ -322,7 +308,7 @@
                          <input id ="loginSub" type="submit" value="Submit">
                          
                      </div>
-    </form>
+        </form>
         
 	<div data-role="footer">
 		<h4>New Message</h4>
