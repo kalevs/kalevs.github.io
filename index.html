@@ -245,22 +245,95 @@
 
 	<div data-role="header">
             <a href="#Main" data-role="button" data-icon="arrow-l" data-iconpos="notext">Back</a>
-            <h1>New Message</h1>
+            <h1>MailBox</h1>
             <a href="#Main" data-role="button" data-icon="home" data-iconpos="notext">Home</a>             
             </div><!-- /header -->
-            <h1>MailBox</h1>
-	</div><!-- /header -->
+	
 
-	<div data-role="content">	
-		<p>Page content goes here.</p>		
-	</div><!-- /content -->
-
+	
+            
+        <div data-role="navbar">
+        <ul>
+            <li><a href="#sentMessages" data-icon="arrow-u" >Sent Message's</a></li>
+            <li><a href="#incomingMessages" data-icon="arrow-d" >Incoming Message's</a></li>
+        </ul>
+    </div><!-- /navbar -->
+    
+    <div data-role="content">	
+		
+            </div><!-- /content -->
+            
+            
+    </div><!-- /footer -->
 	<div data-role="footer">
 		<h4>MailBox</h4>
 	</div><!-- /footer -->
     </div>
 </section>
 <!--/MailBox-->
+
+<!--sendMessages-->
+<section id="sentMessages" data-role="page" data-theme="a">
+    <div>
+            
+
+	<div data-role="header">
+      <a href="#MailBox" data-role="button" data-icon="arrow-l" data-iconpos="notext">Back</a>               
+                <h1>Sent Messages</h1>
+                <a href="#Main" data-role="button" data-icon="home" data-iconpos="notext">Home</a>             
+    </div><!-- /header -->
+    
+    
+     <div data-role="navbar">
+        <ul>
+            <li><a href="#sentMessages" data-icon="arrow-u" >Sent Message's</a></li>
+            <li><a href="#incomingMessages" data-icon="arrow-d" >Incoming Message's</a></li>
+        </ul>
+    </div><!-- /navbar -->
+    
+    <div data-role="content">	
+		
+            </div><!-- /content -->
+    
+    <!---footer-->
+    
+    <div data-role="footer">
+		<h4>Sent Messages</h4>
+	</div><!-- /footer -->
+    </div>
+</section>
+<!--/sendMessages-->
+
+<!--incomingMessages-->
+<section id="incomingMessages" data-role="page" data-theme="a">
+    <div>
+     <div data-role="header">
+      <a href="#MailBox" data-role="button" data-icon="arrow-l" data-iconpos="notext">Back</a>               
+                <h1>Incoming Messages</h1>
+                <a href="#Main" data-role="button" data-icon="home" data-iconpos="notext">Home</a>             
+    </div><!-- /header -->
+    
+     <div data-role="navbar">
+        <ul>
+            <li><a href="#sentMessages" data-icon="arrow-u" >Sent Message's</a></li>
+            <li><a href="#incomingMessages" data-icon="arrow-d" >Incoming Message's</a></li>
+        </ul>
+    </div><!-- /navbar -->
+    
+    <div data-role="content">	
+		
+            </div><!-- /content -->
+            
+    <!---footer-->
+    <div data-role="footer">
+		<h4>Incoming Messages</h4>
+	</div><!-- /footer -->
+    </div>
+</section>
+    
+<!--/incomingMessages-->
+
+
 
 <!--NewMessage-->
 <section id="NewMessage" data-role="page" data-theme="a">
