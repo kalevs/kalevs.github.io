@@ -6,9 +6,21 @@ function validateUserAndPass()
                 var dotpos=userName.lastIndexOf(".");
                 
 
-             
+                if (userName.length == 0)
+                {
+                    alert("Please enter your user name");
+                    //return false;
+                    
+                }else if(userPassword.length == 0 ) {
+                    alert("Please enter your Password");
+                    //return false;
+                } else if (atpos<1 || dotpos<atpos+2 || dotpos+2>=userName.length)
+                {
+                alert("Not a valid e-mail address");
+                 // return false;
+                } else{
                      window.location.href = "#Main";
-                
+                }
             }
 
 function validateUserAndPassNewUserPage(){
@@ -40,4 +52,9 @@ function validateUserAndPassNewUserPage(){
                 } else{
                      window.location.href = "#ThankYou";
                 }
+            }
+            
+            
+            function validateUserMessage(){
+                alert("thankYou")
             }
