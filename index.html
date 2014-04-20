@@ -76,8 +76,9 @@
     <section id="newUser" data-role="page" data-theme="a">
 <div>
           <div data-role="header">
+		<a href="#login" data-role="button" data-icon="arrow-l" data-iconpos="notext">Back</a>
 		<h1>New User</h1>                
-                  <a href="#login" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Back</a>                  
+                <a href="#login" data-role="button" data-icon="home" data-iconpos="notext">Home</a>                  
 	</div>
     <!-- /header -->
 
@@ -105,13 +106,13 @@
                             <label for="SGEmail">Email:</label>                    
                             <input type="text" style="border: #ffffff;width:90%;display:inline-block" name="Email" id="SGEmail" data-clear-btn="true" value="">
                            
-                            <!--- check validity button--->
+                            <!-- check validity button-->
                             <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Check Email</a>
 
                             <div data-role="popup" id="myPopup">
                                 <p>A function will check if the address is available</p>
                             </div>
-                            <!--- check validity--->                                                                                
+                            <!-- check validity-->                                                                                
                         </div>
                            
                         
@@ -143,8 +144,8 @@
                         </div>
                         
                          <div class="loginSub">
-                             <input id ="GSSubmit" type="submit" value="Submit" >
-                     </div>
+                            <input id ="GSSubmit" type="submit" value="Submit">
+                         </div>
                         
                     </form>
                 
@@ -178,7 +179,7 @@
                     <a href="#MailBox" class="ui-btn ui-icon-mail ui-btn-icon-left">MailBox</a>
             </div>	            
             <div data-role="main" class="ui-content">
-                <a href="#Settings" class="ui-btn ui-icon-grid ui-btn-icon-left">Settings</a>
+                <a href="#Settings" class="ui-btn ui-icon-gear ui-btn-icon-left">Settings</a>
             </div>
             
         
@@ -190,6 +191,31 @@
 </div>
 </section>
 <!--/Main-->
+
+<!--Settings-->
+<section id="Settings" data-role="page" data-theme="a">
+    <div>
+	<div data-role="header">		
+                <a href="#Main" data-role="button" data-icon="arrow-l" data-iconpos="notext">Back</a>               
+                <h1>Settings</h1>
+                <a href="#Main" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
+	</div><!-- /header -->
+
+	<div data-role="content">	            
+		<p>Page content goes here.</p>		
+                
+                <a href="#Profile" data-role="button" data-icon="user">Profile</a>
+                <a href="#TrusteesEditor" data-role="button" data-icon="eye">Trustees</a>                               
+                
+                
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4></h4>
+	</div><!-- /footer -->
+    </div>
+</section>
+<!--/Settings-->
 
 <!--ThankYou-->
 <section id="ThankYou" data-role="page" data-theme="a">
@@ -216,25 +242,6 @@
 
 
 <!--/ThankYou-->
-
-
-<!--Settings-->
-<section id="Settings" data-role="page" data-theme="a">
-    <div>
-	<div data-role="header">
-		<h1>Settings</h1>
-	</div><!-- /header -->
-
-	<div data-role="content">	
-		<p>Page content goes here.</p>		
-	</div><!-- /content -->
-
-	<div data-role="footer">
-		<h4>Settings</h4>
-	</div><!-- /footer -->
-    </div>
-</section>
-<!--/Settings-->
 
 <!--MailBox-->
 <section id="MailBox" data-role="page" data-theme="a">
@@ -323,6 +330,153 @@
     </div>
 </section>
 <!--/NewMessage-->
+
+<!--Profile-->
+<section id="Profile" data-role="page" data-theme="a">
+    <div>
+
+	<div data-role="header">
+		<a href="#Settings" data-role="button" data-icon="arrow-l" data-iconpos="notext">Back</a>               
+                <h1>Profile Editor</h1>
+                <a href="#Main" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+            
+            <form id="ProfileEditeForm" method="post">
+                
+                <div data-role="fieldcontain">
+                            <label for="EditeProfileUserName">User Name:</label>                    
+                            <input type="text" style="border: #ffffff" name="EditeProfileUserName" id="EditeProfileUserName" data-clear-btn="true" value="">                   
+                        </div>    
+                        
+                        <div data-role="fieldcontain">                            
+                            <label for="EditeProfileLName">Last Name:</label>                    
+                            <input type="text" style="border: #ffffff" name="EditeProfileLName" id="EditeProfileLName" data-clear-btn="true" value="">                    
+                        </div>
+                        
+                        <div data-role="fieldcontain">                            
+                            <label for="EditeProfilePhoneNum">Phone Number:</label>                    
+                            <input type="text" style="border: #ffffff" name="Pnum" id="EditeProfilePhoneNum" data-clear-btn="true" value="">                    
+                        </div>
+                        
+                        <div data-role="fieldcontain">                            
+                            <label for="EditeProfileEmail">Email:</label>                    
+                            <input type="text" style="border: #ffffff;width:90%;display:inline-block" name="Email" id="EditeProfileEmail" data-clear-btn="true" value="">
+                           
+                            <!-- check validity button-->
+                            <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Check Email</a>
+
+                            <div data-role="popup" id="EditeProfilePopup">
+                                <p>A function will check if the address is available</p>
+                            </div>
+                            <!-- check validity-->                                                                                
+                        </div>
+            
+                <label for="switch">Allow Location:
+                    <input type="checkbox" data-role="flipswitch" name="switch" id="switch" data-on-text="On" data-off-text="Off">
+                </label>
+                
+                <div data-role="controlgroup" data-type="horizontal">
+                    <!--<div class="loginSub">                    -->
+                            <input id ="EditeSave" type="submit" data-icon="check" value="Save">
+                    
+                    <a href="index.html" data-role="button" data-icon="delete" data-inline="true">Cancel</a>                    
+                </div>
+                
+            </form>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4></h4>
+	</div><!-- /footer -->
+    </div>
+</section>
+<!--/Profile-->
+
+<!--TrusteesEditor-->
+<section id="TrusteesEditor" data-role="page" data-theme="a">
+    <div>
+
+	<div data-role="header">
+		<a href="#Settings" data-role="button" data-icon="arrow-l" data-iconpos="notext">Back</a>               
+                <h1>Trustee's Editor</h1>
+                <a href="#Main" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
+	</div><!-- /header -->
+
+	<div data-role="content" align='center'>	
+		
+                
+                
+                <form id="TrusteeEditeForm" method="post">
+                
+                    <div data-role="controlgroup" data-type="horizontal">
+                                                    
+                                <select name="select-native-3" id="select-native-3" data-iconpos="left">
+                                    <option value="1">choose a Trustee</option>
+                                    <option value="2">Trustee1</option>
+                                    <option value="3">Trustee2</option>
+                                    <option value="4">Trustee3</option>
+                                    <option value="5">Trustee4</option>
+                                    <option value="6">Trustee5</option>
+                                </select>                            
+                            
+                        
+                            <!-- + button for a new trustee that will open a pop-up for signing in -->                    
+                            <a href="#Main" data-role="button" data-icon="plus" data-iconpos="notext">Add</a>
+                        
+                    </div>
+                    
+                    
+                    
+                
+                <div data-role="fieldcontain">
+                            <label for="EditeTrusteeUserName">User Name:</label>                    
+                            <input type="text" style="border: #ffffff" name="EditeProfileUserName" id="EditeTrusteeUserName" data-clear-btn="true" value="">                   
+                        </div>    
+                        
+                        <div data-role="fieldcontain">                            
+                            <label for="EditeTrusteeLName">Last Name:</label>                    
+                            <input type="text" style="border: #ffffff" name="EditeProfileLName" id="EditeTrusteeLName" data-clear-btn="true" value="">                    
+                        </div>
+                        
+                        <div data-role="fieldcontain">                            
+                            <label for="EditeTrusteePhoneNum">Phone Number:</label>                    
+                            <input type="text" style="border: #ffffff" name="Pnum" id="EditeTrusteePhoneNum" data-clear-btn="true" value="">                    
+                        </div>
+                                            
+                        <div data-role="fieldcontain" data-type="horizontal">                            
+                            <label for="EditeTrusteeEmail">Email:</label>                    
+                            <input type="text" style="border: #ffffff;width:90%;display:inline-block" name="Email" id="EditeTrusteeEmail" data-clear-btn="true" value="">
+                           
+                            <!-- check validity button-->
+                            <a href="#myPopup" data-rel="popup" data-role="button" data-icon="search" data-iconpos="notext">Check Email</a>
+
+                            <div data-role="popup" id="EditeTrusteePopup">
+                                <p>A function will check if the address is available</p>
+                            </div>
+                            <!-- check validity-->                                                                                
+                        </div>
+                        
+                    
+                    <div data-role="controlgroup" data-type="horizontal">
+                            <input id ="TrusteesEditeSave" type="submit" data-icon="check" value="Save">
+                    
+                            <a href="index.html" data-role="button" data-icon="delete" data-inline="true">Cancel</a>                    
+                    
+                            <button class="ui-btn ui-icon-recycle ui-btn-icon-left">Reset all Trustee's</button>
+                    </div>
+                    
+                </form>
+                    
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4></h4>
+	</div><!-- /footer -->
+    </div>
+</section>
+<!--/TrusteesEditor-->
 
 
 </body>
