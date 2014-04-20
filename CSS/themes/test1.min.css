@@ -241,3 +241,17 @@ html .ui-alt-icon .ui-radio-off:after {
 .signIn{
     width: 400px;
 }
+
+
+#NUTable{
+    width: 80% !important;
+}
+
+.logOut{
+    margin-right: 0;
+    width: 100px;
+}
+
+.pull-left {
+  float: left;
+}
