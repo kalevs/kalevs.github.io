@@ -19,7 +19,7 @@ function validateUserAndPass()
                 alert("Not a valid e-mail address");
                   return false;
                 } else{
-                            return true;
+                     window.location.href = "#Main";
                 }
             }
 
@@ -49,7 +49,5 @@ function validateUserAndPassNewUserPage(){
                 {
                 alert("Not a valid e-mail address");
                   return false;
-                } else{
-                            return true;
                 }
             }
