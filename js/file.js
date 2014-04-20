@@ -49,5 +49,7 @@ function validateUserAndPassNewUserPage(){
                 {
                 alert("Not a valid e-mail address");
                   return false;
+                } else{
+                     window.location.href = "#ThankYou";
                 }
             }
