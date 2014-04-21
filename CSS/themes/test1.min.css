@@ -255,3 +255,52 @@ html .ui-alt-icon .ui-radio-off:after {
 .pull-left {
   float: left;
 }
+
+
+.ui-block-a{
+    width: 40% !important; 
+}
+
+.ui-block-b{
+    width: 60% !important;
+}
+
+.ui-block-c{
+    width: 50% !important;
+}
+
+.sideBySideA{
+    width: 60% !important;
+}
+
+.ui-button-width{
+    width: 50% !important;
+    
+}
+
+.ui-new-user{    
+    margin-right: 0;
+    font-size: 13px;
+}
+
+#logo {
+   display:block;   
+   background-image: url('trustees.png');
+   padding: 50px 0 0 0;   
+   background-image: url("trustees.png");
+   background-repeat: no-repeat;
+   background-size: 100%;
+   height: 20% !important;
+   width: 100% !important;
+}
+
+.lowerLogo{   
+   display:block;     
+   background-position: bottom;
+   background-image: url("people.png");
+   background-repeat: no-repeat;
+   background-size: 10%;
+   height: 10% !important;      
+}
+
+
