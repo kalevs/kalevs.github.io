@@ -58,3 +58,21 @@ function validateUserAndPassNewUserPage(){
             function validateUserMessage(){
                 alert("thankYou")
             }
+
+
+function checkNotEmptyForm(){
+    var userInput=document.forms["SendMessageForm"]["textOfMessage"].value;
+    var userSendToPeople=document.forms["SendMessageForm"]["select-custom-19"].value;
+    
+    if (userInput==null || userInput=="")
+    {
+        alert("Please Fill the text Box!");
+        return false;
+     }else if(userSendToPeople==null || userSendToPeople==""){
+            alert("Please Choose at least one Trusty to send him the message!");
+            return false;
+        }else{
+            window.location.href = "#ThankYou";
+            
+        }
+}
