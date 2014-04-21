@@ -26,7 +26,7 @@
 
 	<div data-role="header">
             <div class="widthChange"> 
-		<h1>Trustee's Login</h1>
+		<h1 id='logo'> <a href=""><span></span></a> </h1>
             </div>
 	</div><!-- /header -->
 
@@ -35,7 +35,7 @@
                 
                 <!-- new user button -->
                 <div align="right"> 
-                    <a href="#newUser" id="newUserLink" class="ui-btn ui-btn-inline ui-mini">New User</a>
+                    <a href="#newUser" data-role="button" class="ui-icon-star ui-new-user ui-shadow ui-corner-all" data-mini="true" data-inline="true" data-icon="star">New User</a>
                 </div>
                 <!-- /new user button -->
                 
@@ -94,20 +94,28 @@
                         </div>
                         
                         <div data-role="fieldcontain">                            
+                            <label for="Password">Password:</label>                    
+                            <input type="text" style="border: #ffffff" name="Password" id="Password" data-clear-btn="true" value="">                    
+                        </div>
+                        
+                        <div data-role="fieldcontain">                            
+                            <label for="RePassword">Password Verification:</label>                    
+                            <input type="text" style="border: #ffffff" name="RePassword" id="RePassword" data-clear-btn="true" value="">                    
+                        </div>
+                        
+                        <div data-role="fieldcontain">                            
                             <label for="PhoneNum">Phone Number:</label>                    
                             <input type="text" style="border: #ffffff" name="Pnum" id="PhoneNum" data-clear-btn="true" value="">                    
                         </div>
                         
-                        <div data-role="fieldcontain">                            
-                            <label for="SGEmail">Email:</label>                    
-                            <input type="text" style="border: #ffffff;width:90%;display:inline-block" name="Email" id="SGEmail" data-clear-btn="true" value="">
-                           
+                        <div data-role="fieldcontain">                       
+                            <label for="SGEmail">Email:</label>                                                                                                       
+                            <input type="text" style="border: #ffffff;width:90%;display:inline-block" name="Email" id="SGEmail" data-clear-btn="true" value="">                           
                             <!-- check validity button-->
-                            <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Check Email</a>
-
+                            <a href="#myPopup" data-rel="popup" data-role="button" data-icon="search" data-iconpos="notext">Check Email</a>
                             <div data-role="popup" id="myPopup">
                                 <p>A function will check if the address is available</p>
-                            </div>
+                            </div>                            
                             <!-- check validity-->                                                                                
                         </div>
                            
@@ -148,8 +156,8 @@
 	</div><!-- /content -->
 
 	<div data-role="footer">
-		<h4>Page Footer</h4>
-	</div>
+		<h4 class='lowerLogo'></h4>
+	</div><!-- /footer -->
 </div> <!--page-->
     </section>
     
@@ -159,7 +167,9 @@
 <section id="Main" data-role="page" data-theme="a">
 <div>
     <div data-role="header">
-        <h1>Main</h1>                
+       <a href="#login" data-role="button" data-icon="arrow-l" data-iconpos="notext">Back</a>               
+       <h1>Main</h1>                        
+       <a href="#" data-role="button" class="logOut ui-corner-all" data-icon="power" data-inline="true" data-mini="true" data-iconpos="notext">Log-Out</a>                          
     </div><!-- /header -->    
 
 	<div data-role="content">	
@@ -182,7 +192,7 @@
         </div><!-- /content -->
 
 	<div data-role="footer">
-		<h4></h4>
+		<h4 class='lowerLogo'></h4>
 	</div><!-- /footer -->
 </div>
 </section>
@@ -207,7 +217,7 @@
 	</div><!-- /content -->
 
 	<div data-role="footer">
-		<h4></h4>
+		<h4 class='lowerLogo'></h4>
 	</div><!-- /footer -->
     </div>
 </section>
@@ -231,7 +241,7 @@
         </div><!-- /content -->
 
 	<div data-role="footer">
-		<h4></h4>
+		<h4 class='lowerLogo'></h4>
 	</div><!-- /footer -->
 </div>
 </section>
@@ -266,7 +276,7 @@
             
     </div><!-- /footer -->
 	<div data-role="footer">
-		<h4>MailBox</h4>
+		<h4 class='lowerLogo'></h4>
 	</div><!-- /footer -->
     </div>
 </section>
@@ -298,7 +308,7 @@
     <!---footer-->
     
     <div data-role="footer">
-		<h4>Sent Messages</h4>
+		<h4 class='lowerLogo'></h4>
 	</div><!-- /footer -->
     </div>
 </section>
@@ -326,7 +336,7 @@
             
     <!---footer-->
     <div data-role="footer">
-		<h4>Incoming Messages</h4>
+		<h4 class='lowerLogo'></h4>
 	</div><!-- /footer -->
     </div>
 </section>
@@ -384,7 +394,7 @@
         </form>
         
 	<div data-role="footer">
-		<h4>New Message</h4>
+		<h4 class='lowerLogo'></h4>
 	</div><!-- /footer -->
     </div>
 </section>
@@ -432,6 +442,9 @@
                             <!-- check validity-->                                                                                
                         </div>
             
+            	<!-- Password change Link-->
+            	<a href="#ChangePassword" data-role="button" data-icon="edit" data-inline="true" class="ui-shadow ui-corner-all">Change Password</a>                    
+            
                 <label for="switch">Allow Location:
                     <input type="checkbox" data-role="flipswitch" name="switch" id="switch" data-on-text="On" data-off-text="Off">
                 </label>
@@ -447,7 +460,7 @@
 	</div><!-- /content -->
 
 	<div data-role="footer">
-		<h4></h4>
+		<h4 class='lowerLogo'></h4>
 	</div><!-- /footer -->
     </div>
 </section>
@@ -483,11 +496,7 @@
                         
                             <!-- + button for a new trustee that will open a pop-up for signing in -->                    
                             <a href="#Main" data-role="button" data-icon="plus" data-iconpos="notext">Add</a>
-                        
                     </div>
-                    
-                    
-                    
                 
                 <div data-role="fieldcontain">
                             <label for="EditeTrusteeUserName">User Name:</label>                    
@@ -502,28 +511,23 @@
                         <div data-role="fieldcontain">                            
                             <label for="EditeTrusteePhoneNum">Phone Number:</label>                    
                             <input type="text" style="border: #ffffff" name="Pnum" id="EditeTrusteePhoneNum" data-clear-btn="true" value="">                    
-                        </div>
-                                            
-                        <div data-role="fieldcontain" data-type="horizontal">                            
-                            <label for="EditeTrusteeEmail">Email:</label>                    
-                            <input type="text" style="border: #ffffff;width:90%;display:inline-block" name="Email" id="EditeTrusteeEmail" data-clear-btn="true" value="">
-                           
-                            <!-- check validity button-->
-                            <a href="#myPopup" data-rel="popup" data-role="button" data-icon="search" data-iconpos="notext">Check Email</a>
+                        </div>                                                                    
 
                             <div data-role="popup" id="EditeTrusteePopup">
                                 <p>A function will check if the address is available</p>
                             </div>
-                            <!-- check validity-->                                                                                
-                        </div>
-                        
-                    
+                            <!-- check validity-->                                                      
+                     
+                    <div  align="left">
+                        <button class="ui-btn ui-icon-recycle ui-btn-icon-left ui-corner-all ui-button-width">Reset all Trustee's</button>
+                    </div>
                     <div data-role="controlgroup" data-type="horizontal">
                             <input id ="TrusteesEditeSave" type="submit" data-icon="check" value="Save">
                     
                             <a href="index.html" data-role="button" data-icon="delete" data-inline="true">Cancel</a>                    
-                    
+                    <!--
                             <button class="ui-btn ui-icon-recycle ui-btn-icon-left">Reset all Trustee's</button>
+                    -->
                     </div>
                     
                 </form>
@@ -531,11 +535,58 @@
 	</div><!-- /content -->
 
 	<div data-role="footer">
-		<h4></h4>
+		<h4 class='lowerLogo'></h4>
 	</div><!-- /footer -->
     </div>
 </section>
 <!--/TrusteesEditor-->
+
+<!--ChangePassword-->
+<section id="ChangePassword" data-role="page" data-theme="a">
+    <div>
+
+	<div data-role="header">
+		<a href="#Profile" data-role="button" data-icon="arrow-l" data-iconpos="notext">Back</a>               
+                <h1>Change Password</h1>
+                <a href="#Main" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		
+            <form id="PasswordEditeForm" method="post">
+                
+                <div data-role="fieldcontain">                            
+                    <label for="RetypePassword">ReType-Password:</label>                    
+                    <input type="text" style="border: #ffffff" name="RetypePassword" id="RetypePassword" data-clear-btn="true" value="">                    
+                </div>
+                
+                <div data-role="fieldcontain">                            
+                    <label for="PasswordChange">New Password:</label>                    
+                    <input type="text" style="border: #ffffff" name="PasswordChange" id="PasswordChange" data-clear-btn="true" value="">                    
+                </div>
+                        
+                <div data-role="fieldcontain">                            
+                    <label for="RePasswordChange">New Password Verification:</label>                    
+                    <input type="text" style="border: #ffffff" name="RePasswordChange" id="RePasswordChange" data-clear-btn="true" value="">                    
+                </div>
+                
+                <div data-role="controlgroup" data-type="horizontal">
+                    <input id ="PasswordChangeEditeSave" type="submit" data-icon="check" value="Save">
+                    <a href="index.html" data-role="button" data-icon="delete" data-inline="true">Cancel</a>                    
+                </div>
+                
+            </form>
+            
+            
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4 class='lowerLogo'></h4>
+	</div><!-- /footer -->
+    </div>
+</section>
+<!--/ChangePassword-->
+
 
 
 </body>
