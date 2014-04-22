@@ -248,8 +248,9 @@ html .ui-alt-icon .ui-radio-off:after {
 }
 
 .logOut{
-    margin-right: 0;
-    width: 100px;
+    margin-right: 0;    
+    font-size: 10px;
+    background-color: #29abe2 !important;    
 }
 
 .pull-left {
