@@ -131,3 +131,40 @@ function checkNotEmptyForm(){
             
         }
 }
+
+function valueInsert(val){
+                if(val==="Ron"){
+                    document.getElementById('EditeTrusteeUserName').value='Ron';
+                    document.getElementById('EditeTrusteeLName').value='Choen';
+                    document.getElementById('EditeTrusteePhoneNum').value='0523932829';
+                }
+                else
+                    if(val==="Shay"){
+                        document.getElementById('EditeTrusteeUserName').value='Shay';
+                        document.getElementById('EditeTrusteeLName').value='Aharonson';
+                        document.getElementById('EditeTrusteePhoneNum').value='0520000000';
+                    }
+                    else
+                        if(val==="Dor"){
+                            document.getElementById('EditeTrusteeUserName').value='Dor';
+                            document.getElementById('EditeTrusteeLName').value='Gold';
+                            document.getElementById('EditeTrusteePhoneNum').value='0546339922';
+                        }
+                        else
+                            if(val==="Oren"){
+                                document.getElementById('EditeTrusteeUserName').value='Oren';
+                                document.getElementById('EditeTrusteeLName').value='Levi';
+                                document.getElementById('EditeTrusteePhoneNum').value='0523909029';
+                            }
+                            else
+                                if(val==="Idan"){
+                                    document.getElementById('EditeTrusteeUserName').value='Idan';
+                                    document.getElementById('EditeTrusteeLName').value='Mor';
+                                    document.getElementById('EditeTrusteePhoneNum').value='0523921329';
+                                }
+                                else{
+                        document.getElementById('EditeTrusteeUserName').value='';
+                        document.getElementById('EditeTrusteeLName').value='';
+                        document.getElementById('EditeTrusteePhoneNum').value='';
+                                }
+            }            
