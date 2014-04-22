@@ -15,8 +15,7 @@
   <script src="CSS/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js"></script> 
   
   <script src="js/file.js"></script>
-
-  <!------------------- LoginForm input check------>       
+     
   
 </head> 
 <body>
@@ -40,8 +39,8 @@
                 <!-- /new user button -->
                 
                 <div class="widthChange"> 
-                <form id="loginForm" onsubmit="return validateUserAndPass();" method="post">                    	
-                    
+                <form id="loginForm"  method="post">                    	
+                    <!--onsubmit="return validateUserAndPass();"-->
                     <label for="uName">User Name:</label>
                     <div class="textBoxi">                    
                         <input  style="border: #ffffff" name="userName" id="userName" data-clear-btn="true">
@@ -298,22 +297,155 @@
     </div><!-- /navbar -->
     
     <div data-role="content">	
-		<div data-role="collapsible">
-    <h4>I need Help!</h4>
-    <p>I'm the collapsible content. By default I'm closed, but you can click the header to open me.</p>
-</div>
-        <div data-role="collapsible">
-    <h4>Hair cut</h4>
-    <p>I'm the collapsible content. By default I'm closed, but you can click the header to open me.</p>
-</div>
-        <div data-role="collapsible">
-    <h4>Good site for tickets?</h4>
-    <p>I'm the collapsible content. By default I'm closed, but you can click the header to open me.</p>
-</div>
-        <div data-role="collapsible">
-    <h4>Where?</h4>
-    <p>I'm the collapsible content. By default I'm closed, but you can click the header to open me.</p>
-</div>
+        <table id="sentMessagesTable">
+             <tbody>
+                                     <tr>
+                        <td>    
+                            <div class="HeaderFooter">
+                            <p>Sent Messages:</p> 
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td class="checkBox-width">                            
+                            <input name="checkbox-0 " type="checkbox" >
+                            <div data-role="collapsible">
+                        </td>
+                        <td class="button-width">
+                        <div data-role="collapsible" >
+                            <h4>I need Help!</h4>                             
+                            <div data-role="fieldcontain">
+                                <label for="IncomingMessageFrom">To:</label>                    
+                                <input type="text" style="border: #ffffff" name="IncomingMessageFrom" id="IncomingMessageFrom" data-clear-btn="true" value="">                   
+                            </div> 
+                            <div data-role="fieldcontain">
+                                <label for="IncomingMessageDate">Date:</label>                    
+                                <input type="text" style="border: #ffffff" name="IncomingMessageDate" id="IncomingMessageDate" data-clear-btn="true" value="">                   
+                            </div> 
+                            <label>Content:</label>
+                            <p><b>I'm the collapsible content. By default I'm closed, but you can click the header to open me.</b></p>
+                            <br><br>
+                            <label>Options:</label>                    
+                            <p>Delete ME</p>
+                            
+                            <a href="#MailBox" data-role="button" data-icon="delete" data-iconpos="notext">Delete ME</a>          
+                
+                            
+                        </div></td>
+                            </tr>
+                  
+                   <tr>
+                      <td class="checkBox-width">                            
+                            <input name="checkbox-0 " type="checkbox" >
+                            <div data-role="collapsible">
+                        </td>
+                        <td class="button-width">
+                        <div data-role="collapsible" >
+                            <h4>Hair cut</h4>                             
+                            <div data-role="fieldcontain">
+                                <label for="IncomingMessageFrom">To:</label>                    
+                                <input type="text" style="border: #ffffff" name="IncomingMessageFrom" id="IncomingMessageFrom" data-clear-btn="true" value="">                   
+                            </div> 
+                            <div data-role="fieldcontain">
+                                <label for="IncomingMessageDate">Date:</label>                    
+                                <input type="text" style="border: #ffffff" name="IncomingMessageDate" id="IncomingMessageDate" data-clear-btn="true" value="">                   
+                            </div> 
+                            <label>Content:</label>
+                            <p><b>I'm the collapsible content. By default I'm closed, but you can click the header to open me.</b></p>
+                            <br><br>
+                            <label>Options:</label>                    
+                            <p>Delete ME</p>
+                            
+                            <a href="#MailBox" data-role="button" data-icon="delete" data-iconpos="notext">Delete ME</a>          
+                
+                            
+                        </div></td>
+                            </tr>
+                  <tr>
+                      <td class="checkBox-width">                            
+                            <input name="checkbox-0 " type="checkbox" >
+                            <div data-role="collapsible">
+                        </td>
+                        <td class="button-width">
+                        <div data-role="collapsible" >
+                            <h4>Good site for tickets?</h4>                             
+                            <div data-role="fieldcontain">
+                                <label for="IncomingMessageFrom">To:</label>                    
+                                <input type="text" style="border: #ffffff" name="IncomingMessageFrom" id="IncomingMessageFrom" data-clear-btn="true" value="">                   
+                            </div> 
+                            <div data-role="fieldcontain">
+                                <label for="IncomingMessageDate">Date:</label>                    
+                                <input type="text" style="border: #ffffff" name="IncomingMessageDate" id="IncomingMessageDate" data-clear-btn="true" value="">                   
+                            </div> 
+                           <label>Content:</label>
+                            <p><b>I'm the collapsible content. By default I'm closed, but you can click the header to open me.</b></p>
+                            <br><br>
+                            <label>Options:</label>                    
+                            <p>Delete ME</p>
+                            
+                            <a href="#MailBox" data-role="button" data-icon="delete" data-iconpos="notext">Delete ME</a>          
+                
+                            
+                        </div></td>
+                            </tr>
+                  
+                   <tr>
+                      <td class="checkBox-width">                            
+                            <input name="checkbox-0 " type="checkbox" >
+                            <div data-role="collapsible">
+                        </td>
+                        <td class="button-width">
+                        <div data-role="collapsible" >
+                            <h4>Where?</h4>                             
+                            <div data-role="fieldcontain">
+                                <label for="IncomingMessageFrom">To:</label>                    
+                                <input type="text" style="border: #ffffff" name="IncomingMessageFrom" id="IncomingMessageFrom" data-clear-btn="true" value="">                   
+                            </div> 
+                            <div data-role="fieldcontain">
+                                <label for="IncomingMessageDate">Date:</label>                    
+                                <input type="text" style="border: #ffffff" name="IncomingMessageDate" id="IncomingMessageDate" data-clear-btn="true" value="">                   
+                            </div> 
+                            <label>Content:</label>
+                            <p><b>I'm the collapsible content. By default I'm closed, but you can click the header to open me.</b></p>
+                            <br><br>
+                            <label>Options:</label>                    
+                            <p>Delete ME</p>
+                            
+                            <a href="#MailBox" data-role="button" data-icon="delete" data-iconpos="notext">Delete ME</a>          
+                
+                            
+                        </div></td>
+                            </tr>
+                                            
+                  <tr>
+                      <td class="checkBox-width">                            
+                            <input name="checkbox-0 " type="checkbox" >
+                            <div data-role="collapsible">
+                        </td>
+                        <td class="button-width">
+                        <div data-role="collapsible" >
+                            <h4>I need Help!</h4>                             
+                            <div data-role="fieldcontain">
+                                <label for="IncomingMessageFrom">To:</label>                    
+                                <input type="text" style="border: #ffffff" name="IncomingMessageFrom" id="IncomingMessageFrom" data-clear-btn="true" value="">                   
+                            </div> 
+                            <div data-role="fieldcontain">
+                                <label for="IncomingMessageDate">Date:</label>                    
+                                <input type="text" style="border: #ffffff" name="IncomingMessageDate" id="IncomingMessageDate" data-clear-btn="true" value="">                   
+                            </div>                             
+                            <label>Content:</label>
+                            <p><b>I'm the collapsible content. By default I'm closed, but you can click the header to open me.</b></p>
+                            <br><br>
+                            <label>Options:</label>                    
+                            <p>Delete ME</p>
+                            
+                            <a href="#MailBox" data-role="button" data-icon="delete" data-iconpos="notext">Delete ME</a>          
+                
+                            
+                        </div></td>
+                  </tr>
+             </tbody>
+             </table>   
             </div><!-- /content -->
     
     <!---footer-->
