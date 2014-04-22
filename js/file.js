@@ -5,8 +5,8 @@ function validateUserAndPass()
                 var atpos=userName.indexOf("@");
                 var dotpos=userName.lastIndexOf(".");
                 
-
-                if (userName.length == 0)
+                        window.location.href = "#Main";
+              /* (userName.length == 0)
                 {
                     alert("Please enter your user name");
                     return false;
@@ -21,7 +21,7 @@ function validateUserAndPass()
                 } else{
                      window.location.href = "#Main";
                 }
-            }
+            }*/
 
 function validateUserAndPassNewUserPage(){
                 var userFirstName = document.forms["newUserForm"]["UName"].value;
