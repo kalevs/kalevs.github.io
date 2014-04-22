@@ -22,6 +22,7 @@ function validateUserAndPass()
                      window.location.href = "#Main";
                 }
             }*/
+            }
 
 function validateUserAndPassNewUserPage(){
                 var userFirstName = document.forms["newUserForm"]["UName"].value;
