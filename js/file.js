@@ -133,6 +133,33 @@ function checkNotEmptyForm(){
         }
 }
 
+function checkChangeOfPasswords(){
+    var userOrginalPassword=document.forms["PasswordEditeForm"]["RetypePassword"].value;
+    var userNewPassword=document.forms["PasswordEditeForm"]["PasswordChange"].value;
+    var userReNewPassword=document.forms["PasswordEditeForm"]["RePasswordChange"].value;
+    
+    if (userOrginalPassword==null || userOrginalPassword=="")
+    {
+        alert("Please enter you Password!");
+        return false;
+    }
+    else if (userNewPassword==null || userNewPassword=="")
+    {
+        alert("Please enter a new password!");
+        return false;
+    }
+       else if (userReNewPassword==null || userReNewPassword=="")
+    {
+        alert("Please enter your new password again");
+        return false;
+    } else if (userNewPassword.toString() != userReNewPassword.toString()){
+        alert("The new Password and the verification isn't equal!");
+        return false;
+    }else{
+         window.location.href = "#ThankYou";
+    }
+    }
+
 function valueInsert(val){
                 if(val==="Ron"){
                     document.getElementById('EditeTrusteeUserName').value='Ron';
