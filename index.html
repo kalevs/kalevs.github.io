@@ -344,31 +344,139 @@
     
     <!-- content -->
     <div data-role="content">	
-        <div data-role="collapsible">
-    <h4>Looking for job!</h4>
-    <p>I'm the collapsible content. By default I'm closed, but you can click the header to open me.</p>
-    </div>
-        <div data-role="collapsible">
-    <h4>Help! SOS</h4>
-    <p>I'm the collapsible content. By default I'm closed, but you can click the header to open me.</p>
-    </div>
-        <div data-role="collapsible">
-    <h4>Heading</h4>
-    <p>I'm the collapsible content. By default I'm closed, but you can click the header to open me.</p>
-    </div>
-        <div data-role="collapsible">
-    <h4>Heading</h4>
-    <p>I'm the collapsible content. By default I'm closed, but you can click the header to open me.</p>
-    </div>
-		
-            </div><!-- /content -->
-            
+        
+        
+        <table id="incomingMessageTable">
+                    <tbody>
+                        
+                    <tr>
+                        
+                        <td>    
+                            <div class="HeaderFooter">
+                            <p>Received Messages</p> 
+                            </div>
+                        </td>
+                        <td></td>
+
+                    </tr>
+                            
+                    <tr>
+                        <td class="checkBox-width">                            
+                            <input name="checkbox-0 " type="checkbox" >
+                            <div data-role="collapsible">
+                        </td>
+                        
+                        <td class="button-width">
+                        <div data-role="collapsible" >
+                            <h4>I need Help!</h4>                             
+                            <div data-role="fieldcontain">
+                                <label for="IncomingMessageFrom1">From:</label>                    
+                                <input type="text" style="border: #ffffff" name="IncomingMessageFrom1" id="IncomingMessageFrom1" data-clear-btn="true" value="">                   
+                            </div> 
+                            <div data-role="fieldcontain">
+                                <label for="IncomingMessageDate1">Date:</label>                    
+                                <input type="text" style="border: #ffffff" name="IncomingMessageDate1" id="IncomingMessageDate1" data-clear-btn="true" value="">                   
+                            </div>                             
+                            
+                            <label>Content:</label>                    
+                            <p>This is a default message, messages should be pulled from server's database</p>
+                            
+                            <a href="#MailBox" data-role="button" data-icon="location" data-iconpos="notext">Location</a>   
+                            
+                            <!-- Response buttons -->
+                            
+                            <div data-role="controlgroup" data-type="horizontal">
+                                <a href="#MailBox" data-role="button" data-icon="check" data-iconpos="notext">Respond</a>  
+                                <a href="#MailBox" data-role="button" data-icon="delete" data-iconpos="notext">Decline</a>   
+                                <a href="#MailBox" data-role="button" data-icon="forward" data-iconpos="notext">Transfer</a>   
+                            </div>
+                            
+                        </div>
+                        
+                        </td>
+          
+                    </tr>                           
+      
+                    <tr>
+                        <td class="checkBox-width">                            
+                            <input name="checkbox-0 " type="checkbox" >
+                            <div data-role="collapsible">
+                        </td>
+                        
+                        <td class="button-width">
+                        <div data-role="collapsible" >
+                            <h4>Looking for job!</h4>                             
+                            <div data-role="fieldcontain">
+                                <label for="IncomingMessageFrom2">From:</label>                    
+                                <input type="text" style="border: #ffffff" name="IncomingMessageFrom2" id="IncomingMessageFrom2" data-clear-btn="true" value="">                   
+                            </div> 
+                            <div data-role="fieldcontain">
+                                <label for="IncomingMessageDate2">Date:</label>                    
+                                <input type="text" style="border: #ffffff" name="IncomingMessageDate2" id="IncomingMessageDate2" data-clear-btn="true" value="">                   
+                            </div>                             
+                            
+                            <label>Content:</label>                    
+                            <p>This is a default message, messages should be pulled from server's database.</p>
+                            
+                            <a href="#MailBox" data-role="button" data-icon="location" data-iconpos="notext">Location</a>   
+                            
+                            <!-- Response buttons -->
+                            
+                            <div data-role="controlgroup" data-type="horizontal">
+                                <a href="#MailBox" data-role="button" data-icon="check" data-iconpos="notext">Respond</a>  
+                                <a href="#MailBox" data-role="button" data-icon="delete" data-iconpos="notext">Decline</a>   
+                                <a href="#MailBox" data-role="button" data-icon="forward" data-iconpos="notext">Transfer</a>   
+                            </div>
+                            
+                        </div>                        
+                        </td>          
+                    </tr>       
+                    
+                    <tr>
+                        <td class="checkBox-width">                            
+                            <input name="checkbox-0 " type="checkbox" >
+                            <div data-role="collapsible">
+                        </td>
+                        
+                        <td class="button-width">
+                        <div data-role="collapsible" >
+                            <h4>Help! SOS</h4>                             
+                            <div data-role="fieldcontain">
+                                <label for="IncomingMessageFrom3">From:</label>                    
+                                <input type="text" style="border: #ffffff" name="IncomingMessageFrom3" id="IncomingMessageFrom3" data-clear-btn="true" value="">                   
+                            </div> 
+                            <div data-role="fieldcontain">
+                                <label for="IncomingMessageDate3">Date:</label>                    
+                                <input type="text" style="border: #ffffff" name="IncomingMessageDate3" id="IncomingMessageDate3" data-clear-btn="true" value="">                   
+                            </div>                             
+                            
+                            <label>Content:</label>                    
+                            <p>This is a default message, messages should be pulled from server's database</p>
+                            
+                            <a href="#MailBox" data-role="button" data-icon="location" data-iconpos="notext">Location</a>   
+                            
+                            <!-- Response buttons -->
+                            
+                            <div data-role="controlgroup" data-type="horizontal">
+                                <a href="#MailBox" data-role="button" data-icon="check" data-iconpos="notext">Respond</a>  
+                                <a href="#MailBox" data-role="button" data-icon="delete" data-iconpos="notext">Decline</a>   
+                                <a href="#MailBox" data-role="button" data-icon="forward" data-iconpos="notext">Transfer</a>   
+                            </div>
+                            
+                        </div>                        
+                        </td>          
+                    </tr>       
+                    
+                    </tbody>
+                </table>
+               
     <!---footer-->
     <div data-role="footer">
 		<h4 class='lowerLogo'></h4>
 	</div><!-- /footer -->
     </div>
 </section>
+
     
 <!--/incomingMessages-->
 
