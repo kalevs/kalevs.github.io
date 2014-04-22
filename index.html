@@ -512,7 +512,7 @@
                     <div data-role="controlgroup" data-type="horizontal">
                         
                             <label for="trusteeUpdate">choose a Trustee:</label>
-                            <select name="trusteeUpdate" id="trusteeUpdate" multiple="multiple"  data-native-menu="false">
+                            <select name="trusteeUpdate" id="trusteeUpdate" data-native-menu="false" onchange='valueInsert(this.value)'>
                                 <option value="Ron">Ron</option>
                                 <option value="Shay">Shay</option>
                                 <option value="Dor">Dor</option>
