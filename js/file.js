@@ -9,15 +9,15 @@ function validateUserAndPass()
                 if (userName.length == 0)
                 {
                     alert("Please enter your user name");
-                    //return false;
+                    return false;
                     
                 }else if(userPassword.length == 0 ) {
                     alert("Please enter your Password");
-                    //return false;
+                    return false;
                 } else if (atpos<1 || dotpos<atpos+2 || dotpos+2>=userName.length)
                 {
                 alert("Not a valid e-mail address");
-                 // return false;
+                  return false;
                 } else{
                      window.location.href = "#Main";
                 }
@@ -31,6 +31,7 @@ function validateUserAndPassNewUserPage(){
                 var UserEmail = document.forms["newUserForm"]["SGEmail"].value;
                 var atpos=UserEmail.indexOf("@");
                 var dotpos=UserEmail.lastIndexOf(".");
+                  var phoneno = /^[0-9]+$/;  
                 
                 if (userFirstName.length == 0)
                 {
@@ -42,7 +43,7 @@ function validateUserAndPassNewUserPage(){
              //   }else if(userPassword.length == 0 ) {
              //       alert("Please enter your Password");
              //       return false;
-                }else if(PhoneNumber.length!= 10){
+                }else if((PhoneNumber.length!= 10)||(!PhoneNumber.match(phoneno))){
                     alert("Please enter 10 digits phone number");
                     return false;
                 } else if (atpos<1 || dotpos<atpos+2 || dotpos+2>=UserEmail.length)
@@ -58,8 +59,62 @@ function validateUserAndPassNewUserPage(){
             function validateUserMessage(){
                 alert("thankYou")
             }
+function checkNotEmptyTrusteesEditorForm(){
+    var userFirstName=document.forms["TrusteeEditeForm"]["EditeProfileUserName"].value;
+    var userLastName=document.forms["TrusteeEditeForm"]["EditeProfileLName"].value;
+    var userPhoneNumber=document.forms["TrusteeEditeForm"]["EditeTrusteePhoneNum"].value;
+    var phoneno = /^[0-9]+$/;        
 
+                if (userFirstName.length == 0)
+                {
+                    alert("Please enter a First name for the user");
+                    //return false;
+                    return false;
+                    
+                }else if(userLastName.length == 0 ) {
+                    alert("Please enter a last name for the user");
+                    //return false;
+                    return false;
+                }else if((userPhoneNumber.length!= 10) || ((!userPhoneNumber.match(phoneno)))){
+                    alert("Please enter 10 digits phone number");
+                    return false;
+                }else{
+                     window.location.href = "#ThankYou";
+                }
+}
 
+function checkNotEmptyTrusteesProgfileEditorForm(){
+    var userFirstName=document.forms["ProfileEditeForm"]["EditeProfileUserName"].value;
+    var userLastName=document.forms["ProfileEditeForm"]["EditeProfileLName"].value;
+    var userPhoneNumber=document.forms["ProfileEditeForm"]["EditeProfilePhoneNum"].value;
+    var userEmailAdd=document.forms["ProfileEditeForm"]["EditeProfileEmail"].value;
+     var atpos=userEmailAdd.indexOf("@");
+    var dotpos=userEmailAdd.lastIndexOf(".");
+    var phoneno = /^[0-9]+$/;
+    
+                if (userFirstName.length == 0)
+                {
+                    alert("Please enter a First name for the user");
+                    //return false;
+                    return false;
+                    
+                }else if(userLastName.length == 0 ) {
+                    alert("Please enter a last name for the user");
+                    //return false;
+                    return false;
+                }else if((userPhoneNumber.length!= 10) || ((!userPhoneNumber.match(phoneno)))){
+                    alert("Please enter 10 digits phone number");
+                    return false;
+                }else if (atpos<1 || dotpos<atpos+2 || dotpos+2>=userEmailAdd.length)
+                {
+                alert("Not a valid e-mail address");
+                  return false;
+                
+                }else{
+                     window.location.href = "#ThankYou";
+                }
+                
+}
 function checkNotEmptyForm(){
     var userInput=document.forms["SendMessageForm"]["textOfMessage"].value;
     var userSendToPeople=document.forms["SendMessageForm"]["select-custom-19"].value;
