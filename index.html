@@ -439,7 +439,7 @@
 
 	<div data-role="content">	
             
-            <form id="ProfileEditeForm" method="post">
+            <form id="ProfileEditeForm"  onsubmit="return checkNotEmptyTrusteesProgfileEditorForm();" method="post">
                 
                 <div data-role="fieldcontain">
                             <label for="EditeProfileUserName">User Name:</label>                    
@@ -453,12 +453,12 @@
                         
                         <div data-role="fieldcontain">                            
                             <label for="EditeProfilePhoneNum">Phone Number:</label>                    
-                            <input type="text" style="border: #ffffff" name="Pnum" id="EditeProfilePhoneNum" data-clear-btn="true" value="">                    
+                            <input type="text" style="border: #ffffff" name="EditeProfilePhoneNum" id="EditeProfilePhoneNum" data-clear-btn="true" value="">                    
                         </div>
                         
                         <div data-role="fieldcontain">                            
                             <label for="EditeProfileEmail">Email:</label>                    
-                            <input type="text" style="border: #ffffff;width:90%;display:inline-block" name="Email" id="EditeProfileEmail" data-clear-btn="true" value="">
+                            <input type="text" style="border: #ffffff;width:90%;display:inline-block" name="EditeProfileEmail" id="EditeProfileEmail" data-clear-btn="true" value="">
                            
                             <!-- check validity button-->
                             <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Check Email</a>
@@ -507,7 +507,7 @@
 		
                 
                 
-                <form id="TrusteeEditeForm" method="post">
+            <form id="TrusteeEditeForm" onsubmit="return checkNotEmptyTrusteesEditorForm();" method="post">
                                                   
                     <div data-role="controlgroup" data-type="horizontal">
                         
