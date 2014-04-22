@@ -202,7 +202,7 @@
 	</div><!-- /header -->
 
 	<div data-role="content">	            
-		<p>Page content goes here.</p>		
+            <br><br>	
                 
                 <a href="#Profile" data-role="button" data-icon="user">Profile</a>
                 <a href="#TrusteesEditor" data-role="button" data-icon="eye">Trustees</a>                               
@@ -719,7 +719,7 @@
                     <!--<div class="loginSub">                    -->
                             <input id ="EditeSave" type="submit" data-icon="check" value="Save">
                     
-                    <a href="index.html" data-role="button" data-icon="delete" data-inline="true">Cancel</a>                    
+                    <a href="#Settings" data-role="button" data-icon="delete" data-inline="true">Cancel</a>                    
                 </div>
                 
             </form>
@@ -789,7 +789,7 @@
                     <div data-role="controlgroup" data-type="horizontal">
                             <input id ="TrusteesEditeSave" type="submit" data-icon="check" value="Save">
                     
-                            <a href="index.html" data-role="button" data-icon="delete" data-inline="true">Cancel</a>                    
+                            <a href="#Settings" data-role="button" data-icon="delete" data-inline="true">Cancel</a>                    
                     <!--
                             <button class="ui-btn ui-icon-recycle ui-btn-icon-left">Reset all Trustee's</button>
                     -->
@@ -818,7 +818,7 @@
 
 	<div data-role="content">	
 		
-            <form id="PasswordEditeForm" method="post">
+            <form id="PasswordEditeForm" onsubmit="return checkChangeOfPasswords();" method="post">
                 
                 <div data-role="fieldcontain">                            
                     <label for="RetypePassword">ReType-Password:</label>                    
@@ -837,7 +837,7 @@
                 
                 <div data-role="controlgroup" data-type="horizontal">
                     <input id ="PasswordChangeEditeSave" type="submit" data-icon="check" value="Save">
-                    <a href="index.html" data-role="button" data-icon="delete" data-inline="true">Cancel</a>                    
+                    <a href="#Profile" data-role="button" data-icon="delete" data-inline="true">Cancel</a>                    
                 </div>
                 
             </form>
